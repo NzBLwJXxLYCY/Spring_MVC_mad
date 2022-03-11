@@ -1,0 +1,4 @@
+# Project exclude paths
+/Spring_MVC01/target/
+/Spring_MVC02_RequestMapping/target/
+/Spring_MVC03_ReceiveParam/target/
