@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+<!--  声明组件扫描器  -->
+    <context:component-scan base-package="com.reje.Controller"/>
+<!--  声明视图解析器
+      帮助我们处理视图的路径和扩展名，生成视图对象
+
+
+-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<!--前缀：表示视图所在的路径-->
+        <property name="prefix" value="/WEB-INF/view/"/>
+<!--后缀：表示视图文件的扩展名-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+<!--  加入注解驱动  -->
+<!--    <mv:annotation-driven/>-->
+
+<!--第一种处理静态资源不能访问的方式
+    需要在springMVC配置文件中加入<mvc:default-servlet-handler>
+    原理是：加入这个标签后，框架会创建控制器对象DefaultServletHttpRequestHandler，
+    这个对象，会对DispatcherServlet的url进行筛查，如果发现是静态资源，就将该请求
+    转发给web服务器默认的default这个Servlet处理
+
+-->
+<!--    <mvc:default-servlet-handler/>-->
+
+<!-- default-servlet-handler和@RequestMapping冲突 需要加入 mv:annotation-driven解决冲突 -->
+
+
+<!-- 第二种处理静态资源访问的问题
+       mvc:resources 加入后框架会创建DefaultServletHttpRequestHandler这个处理器对象
+       让这个对象处理静态资源的访问，不依赖tomcat服务器。
+       mapping：访问静态资源的uri地址，使用通配符 **
+       location：静态资源在你项目中的目录的位置
+
+       images/**:表示 images/p1.jpg, images/user/logo.gif, images/order/history/list.png
+ -->
+
+<!--    <mvc:resources mapping="/images/**" location="/images/"/>-->
+<!--    <mvc:resources mapping="/html/**" location="/html/"/>-->
+<!--    <mvc:resources mapping="/js/**" location="/js/"/>-->
+
+    <mvc:annotation-driven/>
+<!--把所有静态资源放在一个目录下-->
+    <mvc:resources mapping="/static/**" location="/static/"/>
+
+</beans>
