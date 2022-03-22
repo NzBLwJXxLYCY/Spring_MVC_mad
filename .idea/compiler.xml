@@ -6,15 +6,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Spring_MVC02_RequestMapping" />
-        <module name="Spring_MVC01" />
         <module name="Spring_MVC03_ReceiveParam" />
+        <module name="Spring_MVC08_forward_redirect" />
+        <module name="Spring_MVC04_Return" />
+        <module name="Spring_MVC02_RequestMapping" />
+        <module name="Spring_MVC05_url-pattern" />
+        <module name="Spring_MVC07_ssmR" />
+        <module name="Spring_MVC01" />
+        <module name="Spring_MVC06_ssm" />
+        <module name="Spring_MVC10_interceptor" />
+        <module name="Spring_MVC09_exception_handler" />
+        <module name="Spring_MVC11_interceptor_permission" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Spring_MVC01" target="1.8" />
       <module name="Spring_MVC02_RequestMapping" target="1.8" />
       <module name="Spring_MVC03_ReceiveParam" target="1.8" />
+      <module name="Spring_MVC04_Return" target="1.8" />
+      <module name="Spring_MVC05_url-pattern" target="1.8" />
+      <module name="Spring_MVC06_ssm" target="1.8" />
+      <module name="Spring_MVC07_ssmR" target="1.8" />
+      <module name="Spring_MVC08_forward_redirect" target="1.8" />
+      <module name="Spring_MVC09_exception_handler" target="1.8" />
+      <module name="Spring_MVC10_interceptor" target="1.8" />
+      <module name="Spring_MVC11_interceptor_permission" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

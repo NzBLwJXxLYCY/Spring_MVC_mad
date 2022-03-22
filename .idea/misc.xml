@@ -4,6 +4,14 @@
     <file type="web" url="file://$PROJECT_DIR$/Spring_MVC01" />
     <file type="web" url="file://$PROJECT_DIR$/Spring_MVC02_RequestMapping" />
     <file type="web" url="file://$PROJECT_DIR$/Spring_MVC03_ReceiveParam" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC04_Return" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC05_url-pattern" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC06_ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC07_ssmR" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC08_forword_redirect" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC09_exception_handler" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC10_interceptor" />
+    <file type="web" url="file://$PROJECT_DIR$/Spring_MVC11_interceptor_permission" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -11,6 +19,14 @@
         <option value="$PROJECT_DIR$/Spring_MVC01/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_MVC02_RequestMapping/pom.xml" />
         <option value="$PROJECT_DIR$/Spring_MVC03_ReceiveParam/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC04_Return/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC05_url-pattern/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC06_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC07_ssmR/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC08_forword_redirect/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC09_exception_handler/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC10_interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring_MVC11_interceptor_permission/pom.xml" />
       </list>
     </option>
   </component>

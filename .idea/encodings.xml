@@ -4,5 +4,13 @@
     <file url="file://$PROJECT_DIR$/Spring_MVC01" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring_MVC02_RequestMapping" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring_MVC03_ReceiveParam" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC04_Return" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC05_url-pattern" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC06_ssm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC07_ssmR" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC08_forword_redirect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC09_exception_handler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC10_interceptor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring_MVC11_interceptor_permission" charset="UTF-8" />
   </component>
 </project>

@@ -8,7 +8,8 @@
         $(function () {
             $("#btn").click(function () {
                 $.ajax({
-                    url:"returnVoid_ajax.do",
+                    //url:"returnVoid_ajax.do",
+                    url:"returnJsonObjectArray.do",
                     data:{
                         name:"zhangsan",
                         age:20
@@ -18,7 +19,10 @@
                     success:function (resp) {
                         //resp是服务器端返回的json格式的字符串  {"name":"zhangsan","age":20}
                         //jquery会把字符串转为json对象，赋值给resp形参
-                        alert(resp.name+"牛的==="+resp.age);
+                        $.each(resp,function (i,n) {
+                            alert(n.name+"========="+n.age);
+
+                        })
                     }
                 })
             })
