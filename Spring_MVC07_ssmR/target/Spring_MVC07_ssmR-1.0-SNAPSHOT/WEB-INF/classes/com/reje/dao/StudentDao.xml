@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.reje.dao.StudentDao">
+
+    <select id="selectStudentList" resultType="com.reje.domain.Student">
+        <!--要执行的 sql 语句-->
+        select id,name,email,age from rehe order by id desc
+    </select>
+    
+    <insert id="addStudent">
+        insert into rehe(name,email,age) values(#{name},#{email},#{age})
+    </insert>
+</mapper>
